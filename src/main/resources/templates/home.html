@@ -357,7 +357,7 @@ http://www.tooplate.com/view/2109-the-card
           $(`.tm-section-${currentImageId}`).fadeIn();
           // Gallery
           if (currentImageId === 2) {
-            setupSlider();
+            //setupSlider();
           }
         });
 
@@ -439,13 +439,13 @@ http://www.tooplate.com/view/2109-the-card
           $(".tm-bottom-container").removeClass("tm-static");
         }
       }
-
+      
+      /**
       function setupSlider() {
         let slidesToShow = 4;
         let slidesToScroll = 2;
         //let windowWidth = $(window).width();
         
-        /**
         if ($(window).width() < 480) {
           slidesToShow = 1;
           slidesToScroll = 1;
@@ -456,7 +456,6 @@ http://www.tooplate.com/view/2109-the-card
           slidesToShow = 3;
           slidesToScroll = 2;
         }
-        */
 
         if (slickInitDone) {
           $(".tm-gallery").slick("unslick");
@@ -468,7 +467,7 @@ http://www.tooplate.com/view/2109-the-card
           dots: true,
           customPaging: function(slider, i) {
             var thumb = $(slider.$slides[i]).data();
-            return `<a>${i + 1}</a>`;
+            return "<a>${i + 1}</a>";
           },
           infinite: true,
           prevArrow: false,
@@ -485,7 +484,7 @@ http://www.tooplate.com/view/2109-the-card
             enabled: true
           }
         });
-      }
+      } */
     </script>
   </body>
 </html>
